@@ -1,0 +1,107 @@
+body{
+margin:0;
+font-family:Arial;
+background:#f5efe8;
+}
+
+
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 60px;
+background:#f3e7da;
+}
+
+.logo{
+font-size:24px;
+font-weight:bold;
+color:#4b2e2e;
+}
+
+nav a{
+margin:0 15px;
+text-decoration:none;
+color:#333;
+font-weight:500;
+}
+
+.btn{
+background:#c28b5b;
+color:white;
+border:none;
+padding:10px 20px;
+border-radius:20px;
+cursor:pointer;
+}
+
+
+
+.hero{
+height:500px;
+background-image:url("https://images.unsplash.com/photo-1509042239860-f550ce710b93");
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:center;
+padding-left:80px;
+color:white;
+}
+
+.hero h1{
+font-size:50px;
+}
+
+.hero-btn{
+margin-top:10px;
+padding:12px 25px;
+background:#c28b5b;
+border:none;
+color:white;
+border-radius:20px;
+cursor:pointer;
+}
+
+
+
+.coffee-section{
+text-align:center;
+padding:50px;
+}
+
+.coffee-container{
+display:flex;
+justify-content:center;
+gap:25px;
+margin-top:30px;
+flex-wrap:wrap;
+}
+
+.card{
+background:white;
+width:220px;
+padding:15px;
+border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+.card img{
+width:100%;
+border-radius:8px;
+height:150px;
+object-fit:cover;
+}
+
+.card h3{
+margin:10px 0;
+}
+
+.card button{
+background:#5a3d2b;
+color:white;
+border:none;
+padding:8px 15px;
+border-radius:15px;
+cursor:pointer;
+}

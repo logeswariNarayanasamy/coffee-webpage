@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display properties</title>
+</head>
+<body>
+    <div>
+        <h1>css display properties</h1>
+        <p><small>explain block</small>display: inline;
+            display: block; block level element does not continuously display, does  accept height, width,padding and margin and take a full with and height</p>
+
+        <p>
+            <i>explain inline</i>
+            <strong>display: inline;</strong>
+            inline level element do continuously display , does not accept height, width, does accept  padding and margin and this is not take a full with and height base on value of content,Element takes only required width and does not start on new line. Element takes full width and starts on a new line
+        </p>
+
+        
+        <p>display: inline-block;
+            Element stays inline but allows width and height, margin, padding and does not start on new line.
+            <a href="">Link</a>
+        </p>
+        <p>display: none; Element is hidden and not displayed.
+            remove the element from the document flow, and it will not take up any space on the page. This is different from visibility: hidden, which hides the element but still takes up space in the layout.
+        </p>   
+    </div>
+    <style>
+        div{
+            background-color: rgb(148, 128, 132);
+           /* display: none;*/
+        
+        }
+        h1{
+            background-color: rgb(255, 0, 255);
+
+        }
+        p{
+            background-color: blanchedalmond;
+             display: inline;
+
+
+        }
+        small,i,strong{
+           background-color: chartreuse;
+            margin: 5px;
+            padding: 5px;
+        }
+        a{
+            background-color: aqua;
+            /*display: block;*/
+            display:inline-block;
+            text-align: center;
+            border-radius: 5px;
+        }
+    </style>
+</body>
+</html>
+

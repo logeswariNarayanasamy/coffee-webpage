@@ -1,0 +1,65 @@
+p:hover 
+{
+  background-color: green;
+}
+pre:active 
+{
+  background-color: red;
+}
+button:focus 
+{
+  background-color: yellow;
+  border: 2px solid #e41e1e;
+
+}
+.username:focus{
+    background-color: #4d90fe;
+     border: 20px solid #077237;
+}
+
+
+.my-input {
+  border: 2px solid #ccc; /* Default border color */
+  padding: 10px;
+  transition: border-color 0.3s ease; /* Smooth transition for the border color */
+}
+
+.my-input:focus {
+  border-color: #4d90fe; /* Blue border when focused */
+  background-color: #f0f8ff; /* Light blue background when focused */
+  outline: none; /* Removes the default browser outline */
+}
+
+li:nth-child(2) {
+  color: red;
+}
+
+li:last-child {
+  color: blue;
+}
+
+li:not(.special) {
+  color: rgb(180, 148, 89);
+}
+
+
+ li:first-child {
+  color: green;
+}
+
+li:last-child {
+  color: green;
+}
+
+li:nth-child(2) {
+  color: blue;
+}
+a:visited {
+  color: purple;
+}
+
+h1{
+  background-color: yellow;
+  width: 500px;
+}
+

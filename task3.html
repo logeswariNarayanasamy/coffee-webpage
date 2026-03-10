@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>FORM CREATED</title>
+  
+  <link rel="stylesheet" href="case.css">
+
+  <!--link use for connect the css file, rel use for relationship, href use for file path href="path/to/your/styles.css" external link-->
+</head>
+<style>                           /*style use for internal css, use for only one page*/
+  h3{
+    color:green;
+  }
+</style>
+<body>
+<form>
+  <label for="fname">First name:</label><br>  
+  <input type="text" id="fname" name="fname" required><!--required use for fill the data, not submit the form without fill the data-->
+  <br>
+  <!--<label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname">-->
+  <br>
+    <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="N" readonly><!--readonly use for only read the data, not change the data-->
+</form>
+<hr>
+<h2>Form Submitted Successfully</h2>
+<h3>Thank you for submitting the form.</h3>
+</body>
+</html>
