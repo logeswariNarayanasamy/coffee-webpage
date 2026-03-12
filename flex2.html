@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex direction</title>
+</head>
+<body>
+    <style>
+        h1{
+            background-color: black;
+            color: white;
+            padding: 5px;
+            margin: 5px;
+            height: fit-content;  /* content height take space*/
+            width: fit-content;
+        }
+        div{
+            display: flex;
+            flex-direction: column; /* main axis is row using justify content if it is row hieght:fit-content;, main axis is column using align item if it is column width:fit-content;*/
+            background-color: brown;
+            height: 400px;
+            padding: 10px;
+            justify-content: center; 
+            /*align-items: center;*/
+            
+
+
+        }
+    </style>
+    <div>
+        <h1>fle direction row </h1>
+    </div>
+</body>
+</html>

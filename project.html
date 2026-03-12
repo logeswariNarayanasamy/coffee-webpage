@@ -1,93 +1,202 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <title>Coffee Cafe</title>
-<link rel="stylesheet" href="prjt.css">
+<link href="prjt.css" rel="stylesheet">
+
 </head>
 
 <body>
-
-
+<input type="checkbox" id="menu-toggle">
 <header>
-<div class="logo">Coffee Cafe</div>
+  <div class="logo">☕ Coffee Cafe</div>
 
-<nav>
-<a href="#">Home</a>
-<a href="#">Menu</a>
-<a href="#">Story</a>
-<a href="#">Locations</a>
-<a href="#">Contact</a>
-</nav>
+  <label class="hamburger" for="menu-toggle" aria-label="Toggle menu">
+    <span></span>
+    <span></span>
+    <span></span>
+  </label>
 
-<!--<button class="btn">Order Now</button>-->
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Menu</a>
+    <a href="#">Story</a>
+    <a href="#">Locations</a>
+    <a href="#contact">Contact</a>
+  </nav>
 </header>
 
 
-
 <section class="hero">
+  <div class="hero-text">
+    <h1>Savor the<br><em>Perfect Brew</em></h1>
+    <p>Discover premium coffee crafted from the finest beans,<br>roasted with passion and served with love.</p>
+    <button class="hero-btn">View Menu</button>
+  </div>
 
-<div class="hero-text">
-<h1>Savor the <br> Perfect Brew!</h1>
-<p>Discover premium coffee crafted from the finest beans.</p>
-<button class="hero-btn">View Menu</button>
-</div>
-
+  <div class="hero-img-wrap">
+    <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800" alt="A perfect cup of cappuccino">
+    <div class="hero-stat">
+      <strong>4.9★</strong>
+      <small>Rating</small>
+    </div>
+    <div class="hero-badge">
+      <span class="badge-icon">☕</span>
+      <span class="badge-text">Fresh Daily</span>
+    </div>
+  </div>
 </section>
 
 
 <section class="coffee-section">
+  <div class="section-title">
+    <h2>Why Choose Us?</h2>
+    <span class="divider"></span>
+    <p>Handcrafted with care, served with soul</p>
+  </div>
 
-<h2>Why Choose Us?</h2>
+  <div class="coffee-container">
+    <div class="card">
+      <img src="c1.jpg" alt="Espresso">
+      <div class="card-body">
+        <h3>Espresso</h3>
+        <p>Strong and bold coffee for real coffee lovers.</p>
+        <button>Order Coffee</button>
+      </div>
+    </div>
 
-<div class="coffee-container">
+    <div class="card">
+      <img src="c2.jpg" alt="Latte">
+      <div class="card-body">
+        <h3>Latte</h3>
+        <p>Smooth milk coffee with creamy texture.</p>
+        <button>Order Coffee</button>
+      </div>
+    </div>
 
-<div class="card">
-<img src="https://images.unsplash.com/photo-1511920170033-f8396924c348">
-<h3>Espresso</h3>
-<p>Strong and bold coffee for real coffee lovers.</p>
-<button>Order Coffee</button>
-</div>
+    <div class="card">
+      <img src="c4.jpg" alt="Cappuccino">
+      <div class="card-body">
+        <h3>Cappuccino</h3>
+        <p>Perfect balance of espresso and milk foam.</p>
+        <button>Order Coffee</button>
+      </div>
+    </div>
 
-<div class="card">
-<img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93">
-<h3>Latte</h3>
-<p>Smooth milk coffee with creamy texture.</p>
-<button>Order Coffee</button>
-</div>
+    <div class="card">
+      <img src="background.jpg" alt="Cold Brew">
+      <div class="card-body">
+        <h3>Cold Brew</h3>
+        <p>Refreshing chilled coffee for hot days.</p>
+        <button>Order Coffee</button>
+      </div>
+    </div>
+  </div>
+</section>
 
-<div class="card">
-<img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085">
-<h3>Cappuccino</h3>
-<p>Perfect balance of espresso and milk foam.</p>
-<button>Order Coffee</button>
-</div>
 
-<div class="card">
-<img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735">
-<h3>Cold Brew</h3>
-<p>Refreshing chilled coffee for hot days.</p>
-<button>Order Coffee</button>
-</div>
-</div>
-<div class="contact-form">
-    <h1>contact us</h1>
-    <form>
+<section class="contact-section" id="contact">
+  <div class="contact-inner">
+    <h2>Contact Us</h2>
+    <p class="sub">We'd love to hear from you — reach out any time</p>
+
+    <div class="contact-form">
+      <form onsubmit="return false;">
+
+        
+         <div class="form-row">
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Your full name" required>
+          </div><br>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required>
+          </div>
+        </div>
+
+          <div class="form-group">
+            <label for="phone">Phone (Optional)</label>
+            <input type="tel" id="phone" name="phone" placeholder="+1 234 567 8900">
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <select id="subject" name="subject" required>
+              <option value="" disabled selected>Select a topic…</option>
+              <option value="order">Order Inquiry</option>
+              <option value="feedback">Feedback</option>
+              <option value="catering">Catering Request</option>
+              <option value="franchise">Franchise Info</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+        </div>
+
+       <br>
         <div class="form-group">
-            <lable for="name">name</lable>
-            <input type="text" name="name" placeholder="your  full name" required>      
+          <label for="contact-pref">Preferred Contact Method</label>
+          <select id="contact-pref" name="contact_pref">
+            <option value="" disabled selected>How should we reach you?</option>
+            <option value="email">📧 Email</option>
+            <option value="phone">📞 Phone Call</option>
+            <option value="whatsapp">💬 WhatsApp</option>
+            <option value="none">No preference</option>
+          </select>
         </div>
-        <div class="form-group">
-            <lable for="email">email</lable>
-            <input type="email" name="email" placeholder="you@example.com" required>      
-        </div>
-         <div class="form-group">
-            <lable for="message">message</lable>
-            <textarea name="message" placeholder="how can we help you" required></textarea>       
-        </div>
-        <button type="submit">send message</button>
-    </form>
-</div>
 
+        <div class="form-group">
+          <label>Favourite Drinks</label>
+          <div class="check-group">
+            <div class="check-pill">
+              <input type="checkbox" id="cb-esp" name="drinks" value="espresso">
+              <label for="cb-esp">☕ Espresso</label>
+            </div>
+            <div class="check-pill">
+              <input type="checkbox" id="cb-lat" name="drinks" value="latte">
+              <label for="cb-lat">🥛 Latte</label>
+            </div>
+            <div class="check-pill">
+              <input type="checkbox" id="cb-cap" name="drinks" value="cappuccino">
+              <label for="cb-cap">☁️ Cappuccino</label>
+            </div>
+            <div class="check-pill">
+              <input type="checkbox" id="cb-cb" name="drinks" value="coldbrew">
+              <label for="cb-cb">🧊 Cold Brew</label>
+            </div>
+            <div class="check-pill">
+              <input type="checkbox" id="cb-mo" name="drinks" value="mocha">
+              <label for="cb-mo">🍫 Mocha</label>
+            </div>
+          </div>
+        </div>
+
+        
+        <div class="form-group">
+          <label>Rate Your Experience</label>
+          <div class="star-rating">
+            <input type="radio" id="s5" name="rating" value="5">
+            <label for="s5">★</label>
+            <input type="radio" id="s4" name="rating" value="4">
+            <label for="s4">★</label>
+            <input type="radio" id="s3" name="rating" value="3">
+            <label for="s3">★</label>
+            <input type="radio" id="s2" name="rating" value="2">
+            <label for="s2">★</label>
+            <input type="radio" id="s1" name="rating" value="1">
+            <label for="s1">★</label>
+          </div>
+        </div>
+
+     
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="How can we help you?" required></textarea>
+        </div>
+
+        <button type="submit" class="submit-btn">Send Message</button>
+      </form>
+    </div>
+  </div>
 </section>
 
 

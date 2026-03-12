@@ -4,23 +4,143 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FLEXBOX</title>
-    <style>
+  <!--<style>
         h1{
             background-color: greenyellow;
-            margin: 2px;
-            padding: 5px;
+            margin: 6px;
+            padding: 10px;
+        }
+       .container{
+            display: block;
+            display: flex;
+            flex-direction: row;
         }
         div{
-            /*display: block;*/
             display: flex;
+            background-color: blueviolet;
+            flex-direction: row;
+            width: 200px;
+            flex-wrap: wrap;
+        }
+        h2{
+            background-color: black;
+            color: white;
+            margin: 5px;
+            padding: 5px;
         }
     </style>
 </head>
 <body>
-    <div>
+    <div class="container">
         <h1>flex box</h1>
         <h1>example</h1>
         <h1>code</h1>
     </div>
+    <div>     
+        <h2>one</h2>
+        <h2>two</h2>
+        <h2>three</h2>
+        <h2>four</h2>
+        <h2>five</h2>
+        <h2>six</h2>
+    </div>-->
+<style>
+    *{
+        padding: 0%;
+        margin: 0%;
+    }
+    body{
+        background-color: darkolivegreen;
+    }
+    h1{
+        text-align: center;
+        padding: 5px;
+    }
+    .container div{
+        width: 200px;
+        color: white;
+        padding: 5px;
+        margin: 5px;
+        flex-basis: 20%; /* if you want row only 4 pic when u minimis the screen should be 4 so we can use basis*/
+        flex-grow: 1;    /* flex grow extra space cover so takes width*/
+    }
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+
+</style>
+    <div>
+        <h1>image gallry</h1>
+        <div class="container">
+            <div>
+                <img src="c1.jpg" width="200px" height="200px">
+                <h2>coffee 1</h2>
+                <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</P>
+            </div>
+            <div>
+                <img src="c1.jpg" width="200px" height="200px">
+                <h2>coffee 1</h2>
+                <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</P>
+            </div>
+            <div>
+                <img src="c1.jpg" width="200px" height="200px">
+                <h2>coffee 1</h2>
+                <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</P>
+            </div>
+            <div>
+                <img src="c1.jpg" width="200px" height="200px">
+                <h2>coffee 1</h2>
+                <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</P>
+            </div>         
+            <div>
+                <img src="c1.jpg" width="200px" height="200px">
+                <h2>coffee 1</h2>
+                <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</P>
+            </div>
+            <div>
+                <img src="c1.jpg" width="200px" height="200px">
+                <h2>coffee 1</h2>
+                <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</P>
+            </div>
+            <div>
+                <img src="c1.jpg" width="200px" height="200px">
+                <h2>coffee 1</h2>
+                <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</P>
+            </div>
+            <div>
+                <img src="c1.jpg" width="200px" height="200px">
+                <h2>coffee 1</h2>
+                <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</P>
+            </div>
+            <div>
+                <img src="c1.jpg" width="200px" height="200px">
+                <h2>coffee 1</h2>
+                <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</P>
+            </div>
+            <div>
+                <img src="c1.jpg" width="200px" height="200px">
+                <h2>coffee 1</h2>
+                <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</P>
+            </div>
+            <div>
+                <img src="c1.jpg" width="200px" height="200px">
+                <h2>coffee 1</h2>
+                <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</P>
+            </div>
+            <div>
+                <img src="c1.jpg" width="200px" height="200px">
+                <h2>coffee 1</h2>
+                <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</P>
+            </div>
+            <div>
+                <img src="c1.jpg" width="200px" height="200px">
+                <h2>coffee 1</h2>
+                <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</P>
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>
