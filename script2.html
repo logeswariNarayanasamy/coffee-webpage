@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let usename = "logeswari";
+      let password = 1234;
+     
+
+      let name = prompt("enter your usename");
+      let pass = Number(prompt("enter your password"));
+
+      console.log(name, pass);
+
+      if (name === usename) {
+        if (pass === password) {
+          console.log("Login successful");
+
+          let mark1 = Number(prompt("enter your mark1"));
+          let mark2 = Number(prompt("enter your mark2"));
+          let mark3 = Number(prompt("enter your mark3"));
+          let mark4 = Number(prompt("enter your mark4"));
+          let mark5 = Number(prompt("enter your mark5"));
+          let mark6 = Number(prompt("enter your mark6"));
+
+          let a = mark1 + mark2 + mark3 + mark4 + mark5 + mark6;
+          console.log(a);
+          let b = a / 6;
+          console.log(b);
+           let grade ;
+          if (b >= 90) {
+            console.log("Grade: A");
+            grade = "A";
+          } else if (b >= 75) {
+            console.log("Grade: B");
+            grade = "B";
+          } else if (b >= 50) {
+            console.log("Grade: C");
+            grade = "C";
+          } else {
+            console.log("Fail");
+          }
+          switch (grade) {
+            case "A":
+              console.log("excellent");
+              break;
+            case "B":
+              console.log("verry good");
+              break;
+            case "C":
+              console.log("good");
+              break;
+            default:
+              console.log("CHOOSE THE CORRECT OPTION");
+          }
+        } else {
+          console.log("Wrong password");
+        }
+      } else {
+        console.log("Wrong username");
+      }
+    </script>
+  </body>
+</html>
